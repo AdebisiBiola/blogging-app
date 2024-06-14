@@ -26,7 +26,7 @@ jobs:
             echo ${{ env.APP_VERSION }}
             docker build -t adebisibiola/blog4passion:${{ env.APP_VERSION }} .
 
-        - name: "Push image to Dockerhub"
+        - name: "Push Image to Dockerhub"
           run: |
             docker push adebisibiola/blog4passion:${{ env.APP_VERSION }}
 
